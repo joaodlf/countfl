@@ -73,7 +73,7 @@ func main() {
 		} else {
 			totalErrors++
 			if *log == true {
-				fmt.Println("Error:", err)
+				fmt.Fprintln(os.Stderr, "Error:", err)
 			}
 		}
 		return nil
