@@ -89,6 +89,6 @@ func main() {
 }
 
 func errorExit(e error, code int) {
-	fmt.Println("Error:", e)
+	fmt.Fprintln(os.Stderr, "Error:", e)
 	os.Exit(code)
 }
